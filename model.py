@@ -18,3 +18,6 @@ label_pred = model.predict(feature_test)
 from sklearn.metrics import accuracy_score
 
 print(accuracy_score(label_pred, label_test))
+
+import pickle
+pickle.dump(model,open('model.pkl','wb'))
