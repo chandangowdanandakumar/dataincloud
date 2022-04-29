@@ -14,6 +14,7 @@ feature_train, feature_test, label_train, label_test = train_test_split(
 )
 model = LogisticRegression(max_iter=500)
 model.fit(feature_train, label_train)
+print(feature_test)
 label_pred = model.predict(feature_test)
 from sklearn.metrics import accuracy_score
 
